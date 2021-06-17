@@ -3,7 +3,7 @@ const tableData = data;
 const tableBody = d3.select("tbody");
 
 //Add rows to blank table
-function table(data) {
+function table_Build(data) {
     tableBody.html("");
     data.forEach((row) => {
         const new_row = tableBody.append("tr");
@@ -19,4 +19,4 @@ function table(data) {
 
 
 
-table(tableData);
+table_Build(tableData);
